@@ -14,6 +14,9 @@ def divide(x, y):
         return "Erro: Divisão por zero!"
     return x / y
 
+def remainder(x, y):
+    return x % y
+
 def main():
     print("Bem-vindo à Calculadora!")
     print("Escolha uma operação:")
@@ -21,10 +24,11 @@ def main():
     print("2. Subtração")
     print("3. Multiplicação")
     print("4. Divisão")
+    print("5. resto")
 
     choice = input("Digite o número da operação desejada: ")
 
-    if choice in ['1', '2', '3', '4']:
+    if choice in ['1', '2', '3', '4', '5']:
         num1 = float(input("Digite o primeiro número: "))
         num2 = float(input("Digite o segundo número: "))
 
@@ -36,6 +40,8 @@ def main():
             print(f"{num1} * {num2} = {multiply(num1, num2)}")
         elif choice == '4':
             print(f"{num1} / {num2} = {divide(num1, num2)}")
+        elif choice == '5':
+            print(f"{num1} % {num2} = {remainder(num1, num2)}")
     else:
         print("Opção inválida")
 
