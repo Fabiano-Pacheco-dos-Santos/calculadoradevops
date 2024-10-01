@@ -14,7 +14,7 @@ def multiply(x, y):
 
 def divide(x, y):
     if y == 0:
-        return "Erro: Divisão por zero!"
+        return "Erro: Divisão por zero não permitida!"
     return x / y
 
 
@@ -31,7 +31,7 @@ def main():
     print("4. Divisão")
     print("5. resto")
 
-    choice = input("Digite o número da operação desejada para calcular: ")
+    choice = input("Digite o número da operação: ")
 
     if choice in ['1', '2', '3', '4', '5']:
         num1 = float(input("Digite o primeiro número: "))
