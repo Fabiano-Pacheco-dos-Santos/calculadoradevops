@@ -24,4 +24,4 @@ jobs:
 
       - name: Run tests
         run: |
-          python -m unittest teste_calculadora.py
+          python -m unittest discover
