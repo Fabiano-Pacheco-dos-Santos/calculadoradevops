@@ -31,7 +31,7 @@ def main():
     print("4. Divisão")
     print("5. resto")
 
-    choice = input("Digite o número da operação desejada para calcular: ")
+    choice = input("Digite o número da operação desejada para calcular o resultado: ")
 
     if choice in ['1', '2', '3', '4', '5']:
         num1 = float(input("Digite o primeiro número: "))
@@ -48,7 +48,7 @@ def main():
         elif choice == '5':
             print(f"{num1} % {num2} = {remainder(num1, num2)}")
     else:
-        print("Opção inválida")
+        print("Opção inválida, digite novamente")
 
 
 if __name__ == "__main__":
