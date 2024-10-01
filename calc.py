@@ -1,21 +1,26 @@
-# calculator.py
+# calc.py
 
 def add(x, y):
     return x + y
 
+
 def subtract(x, y):
     return x - y
 
+
 def multiply(x, y):
     return x * y
+
 
 def divide(x, y):
     if y == 0:
         return "Erro: Divisão por zero!"
     return x / y
 
+
 def remainder(x, y):
     return x % y
+
 
 def main():
     print("Bem-vindo à Calculadora!")
@@ -44,6 +49,7 @@ def main():
             print(f"{num1} % {num2} = {remainder(num1, num2)}")
     else:
         print("Opção inválida")
+
 
 if __name__ == "__main__":
     main()
