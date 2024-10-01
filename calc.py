@@ -31,7 +31,7 @@ def main():
     print("4. Divisão")
     print("5. resto")
 
-    choice = input("Digite o número da operação desejada: ")
+    choice = input("Digite o número da operação desejada para calcular: ")
 
     if choice in ['1', '2', '3', '4', '5']:
         num1 = float(input("Digite o primeiro número: "))
